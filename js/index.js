@@ -19,7 +19,8 @@ fetch(apiUrl)
       // Skapa och lägg till delete-knappen
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'Radera';
-      deleteBtn.style.marginLeft = '10px';
+      deleteBtn.style.marginLeft = '2em';
+      deleteBtn.style.marginRight = '0';
       deleteBtn.addEventListener('click', async () => {
         if (confirm('Är du säker på att du vill radera posten?')) {
           await fetch(`${apiUrl}/${item.id}`, {
