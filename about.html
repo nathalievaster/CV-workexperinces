@@ -33,8 +33,14 @@
             <li>Att använda fetch för att interagera med API:er är inget nytt, men att använda ett eget
                 API var något nytt! Det visade sig vara betydligt enklare än jag kunde tänka mig.
             </li>
-            <li>I denna applikation har jag sett till att få med mer tydliga felmeddelanden gentemot
-                användaren, istället för att använda mig av ett enda felmeddelande som "Fyll i alla fält".
+            <li> Jag skrev tydliga felmeddelanden i den REST-webbtjänsten som används här, där användaren 
+                får respons på exakt vilka fält som missats att fyllas i. I denna frontend-applikation 
+                satte jag istället bara required på alla input-fält så användaren får en alert att fälten
+                måste fyllas i. Kan vara något att bygga vidare på. 
+            </li>
+            <li>Jag försökte även att deploya REST-webbtjänsten på render, men lyckades inte. Jag ville skapa
+                en global URL, men istället fick jag köra kvar på localhost och skippa att publicera denna 
+                frontend-sida och istället spela in en video-demo.
             </li>
         </ul>
     </section>
