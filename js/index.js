@@ -5,9 +5,13 @@ fetch(apiUrl)
   .then(data => {
     const list = document.getElementById('work-list');
     data.forEach(item => {
+      // Formatera start- och slutdatum
+      const start = new Date(item.startdate).toLocaleDateString("sv-SE");
+      const end = new Date(item.enddate).toLocaleDateString("sv-SE");
+
       const li = document.createElement('li');
       li.innerHTML = `
-        <strong>${item.companyname}</strong> - ${item.jobtitle} (${item.startdate} till ${item.enddate})<br>
+        <strong>${item.companyname}</strong> - ${item.jobtitle} (${start} till ${end})<br>
         ${item.description}
       `;
       list.appendChild(li);
