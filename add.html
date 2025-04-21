@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lägg till erfarenhet</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <h1>Lägg till arbetserfarenhet</h1>
+  <nav>
+    <a href="index.html">Hem</a> |
+    <a href="add.html">Lägg till</a> |
+    <a href="about.html">Om</a>
+  </nav>
+
+  <form id="work-form">
+    <input type="text" name="companyname" placeholder="Företagsnamn" required /><br />
+    <input type="text" name="jobtitle" placeholder="Titel" required /><br />
+    <input type="text" name="location" placeholder="Plats" required /><br />
+    <input type="date" name="startdate" required /><br />
+    <input type="date" name="enddate" required /><br />
+    <textarea name="description" placeholder="Beskrivning" required></textarea><br />
+    <button type="submit">Spara</button>
+  </form>
+
+  <script src="js/add.js"></script>
+</body>
+</html>
